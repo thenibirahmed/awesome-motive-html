@@ -161,6 +161,7 @@ body {
   font-size: 20px;
   border-radius: 3px;
   display: inline-block;
+  text-decoration: none;
   color: white;
   background: #E27730;
   border: 1px solid #E27730;
@@ -172,6 +173,7 @@ body {
   font-size: 20px;
   border-radius: 3px;
   display: inline-block;
+  text-decoration: none;
   color: #777777;
   background: white;
   border: 1px solid #DDDDDD;
