@@ -160,6 +160,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   border-radius: 3px;
+  display: inline-block;
   color: white;
   background: #E27730;
   border: 1px solid #E27730;
@@ -170,14 +171,30 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   border-radius: 3px;
+  display: inline-block;
   color: #777777;
   background: white;
   border: 1px solid #DDDDDD;
   padding: 20px 85px;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.abosolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .top-hero {
   padding: 50px 0;
+  background: #F8F8F8;
+  box-shadow: inset 0 -250px 0 0 white;
 }
 .top-hero p {
   line-height: 1.4em;
@@ -185,4 +202,17 @@ body {
 }
 .top-hero .primary-button {
   margin-left: 50px;
+}
+.top-hero .video-section {
+  margin-top: 50px;
+  box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.0823529412);
+  border-radius: 3px;
+  position: relative;
+}
+.top-hero .play-button {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
