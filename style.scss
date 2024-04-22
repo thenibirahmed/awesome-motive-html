@@ -1,232 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-$avroFont: "Arvo", serif;
-$latoFont: "Lato", sans-serif;
-
-$secondaryTextColor: #777777;
-$primaryTextColor: #444444;
-
-$primaryColor: #E27730;
-
-@mixin button {
-    font-family: $latoFont;
-    font-size: 20px;
-    border-radius: 3px;
-    display: inline-block;
-    text-decoration: none;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.arvo-regular {
-    font-family: $avroFont;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.arvo-bold {
-    font-family: $avroFont;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.arvo-regular-italic {
-    font-family: $avroFont;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.arvo-bold-italic {
-    font-family: $avroFont;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.lato-thin {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.lato-light {
-    font-family: $latoFont;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.lato-regular {
-    font-family: $latoFont;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.lato-bold {
-    font-family: $latoFont;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.lato-black {
-    font-family: $latoFont;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.lato-thin-italic {
-    font-family: $latoFont;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.lato-light-italic {
-    font-family: $latoFont;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.lato-regular-italic {
-    font-family: $latoFont;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.lato-bold-italic {
-    font-family: $latoFont;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.lato-black-italic {
-    font-family: $latoFont;
-    font-weight: 900;
-    font-style: italic;
-}
-
-.container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-body {
-    font-family: $latoFont;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.justify-start {
-    justify-content: flex-start;
-}
-
-.align-start {
-    align-items: flex-start;
-}
-
-.justify-end {
-    justify-content: flex-end;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-80 {
-    width: 80%;
-}
-
-.w-70 {
-    width: 70%;
-}
-
-.primary-color {
-    color: $primaryTextColor;
-}
-
-.secondary-color {
-    color: $secondaryTextColor;
-}
-
-.margin-auto {
-    margin: auto;
-}
-
-.primary-button {
-    @include button();
-    color: white;
-    background: $primaryColor;
-    border: 1px solid $primaryColor;
-    padding: 20px 58px;
-}
-
-.secondary-button {
-    @include button();
-    color: $secondaryTextColor;
-    background: white;
-    border: 1px solid #DDDDDD;
-    padding: 20px 85px;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.abosolute {
-    position: absolute;
-}
-
-.relative {
-    position: relative;
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-item {
-    padding: 30px;
-    text-align: center;
-}
+@import "./css/variables.scss";
+@import "./css/framework.scss";
 
 .top-hero {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     background: #F8F8F8;
     box-shadow: inset 0 -250px 0 0 white;
     
     p {
         line-height: 1.4em;
-        margin: 30px 0px 50px 0px;
+        margin: 40px 0px 50px 0px;
     }
     .primary-button{
         margin-left: 50px;
@@ -247,6 +31,7 @@ body {
 }
 
 .feature-section {
+    padding: 130px 0px;
     .grid-item {
         padding: 40px 30px;
         h3 {
@@ -275,5 +60,37 @@ body {
     }
     .grid-item:nth-child(6) {
         padding-top: 60px;
+    }
+}
+.testimonial-section {
+    padding: 120px 0px;
+    background: linear-gradient(#F8F8F8, #FFFFFF);
+    .testimonial-card {
+        width: 286.67px;
+    
+        .testimonial-content {
+            border: 1px solid #ddd;
+            padding: 30px;
+            border-radius: 6px;
+        }
+        blockquote {
+            font-size: 16px;
+        }
+    
+        .testimonial-footer{
+            margin-top: 20px;
+        }
+    
+        .testimonial-footer p {
+            font-size: 14px;
+        }
+    }
+
+    .buttons {
+        margin-top: 120px;
+        
+        .primary-button {
+            margin-left: 50px;
+        }
     }
 }

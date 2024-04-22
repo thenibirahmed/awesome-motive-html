@@ -1,0 +1,211 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.arvo-regular {
+    font-family: $avroFont;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arvo-bold {
+    font-family: $avroFont;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.arvo-regular-italic {
+    font-family: $avroFont;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.arvo-bold-italic {
+    font-family: $avroFont;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: $latoFont;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: $latoFont;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: $latoFont;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: $latoFont;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: $latoFont;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: $latoFont;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: $latoFont;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: $latoFont;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: $latoFont;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: $latoFont;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.primary-color {
+    color: $primaryTextColor;
+}
+
+.secondary-color {
+    color: $secondaryTextColor;
+}
+
+.gray-color {
+    color: $grayTextColor;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.primary-button {
+    @include button();
+    color: white;
+    background: $primaryColor;
+    border: 1px solid $primaryColor;
+    padding: 20px 58px;
+}
+
+.secondary-button {
+    @include button();
+    color: $secondaryTextColor;
+    background: white;
+    border: 1px solid #DDDDDD;
+    padding: 20px 85px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.abosolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+    padding: 30px;
+    text-align: center;
+}

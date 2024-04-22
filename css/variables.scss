@@ -1,0 +1,16 @@
+$avroFont: "Arvo", serif;
+$latoFont: "Lato", sans-serif;
+
+$secondaryTextColor: #777777;
+$primaryTextColor: #444444;
+$grayTextColor: #AAAAAA;
+
+$primaryColor: #E27730;
+
+@mixin button {
+    font-family: $latoFont;
+    font-size: 20px;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+}
