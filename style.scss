@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import "./css/variables.scss";
 @import "./css/framework.scss";
 
 .top-hero {
     padding: 50px 0 0 0;
-    background: #F8F8F8;
+    background: $lightBgColor;
     box-shadow: inset 0 -250px 0 0 white;
     
     p {
@@ -17,9 +16,10 @@
     }
     .video-section {
         margin-top: 50px;
-        box-shadow: 0px 0px 50px 30px #00000015;
         border-radius: 3px;
         position: relative;
+
+        box-shadow: 0px 0px 50px 30px #00000015;
     }
     .play-button {
         width: 80px;
@@ -91,6 +91,30 @@
         
         .primary-button {
             margin-left: 50px;
+        }
+    }
+}
+
+.form-control-section {
+    background: $lightBgColor;
+    padding: 100px 0px;
+
+    .left-image{
+        padding: 0px 0px;
+
+        img {
+            box-shadow: 0px 0px 30px 10px #00000010;
+        }
+    }
+    .right-content {
+        padding: 0px 0px 0px 60px;
+        h2 {
+            font-size: 32px!important;
+        }
+        p {
+            font-size: 18px!important;
+            margin-top: 20px;
+            line-height: 1.55em;
         }
     }
 }
