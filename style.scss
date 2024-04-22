@@ -31,9 +31,8 @@
 }
 
 .feature-section {
-    padding: 50px 0px;
-    .flex-item {
-        padding: 30px 30px;
+    .grid-item {
+        padding: 40px 30px;
         h3 {
             margin: 20px 0;
             font-size: 24px;
@@ -45,11 +44,20 @@
             color: $secondaryTextColor;
         }
     }
-    .flex-item:nth-child(1),
-    .flex-item:nth-child(2) {
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(2) {
         border-right: 1px solid #ddd;
-    }
-    .flex:nth-child(1) {
         border-bottom: 1px solid #ddd;
+    }
+    .grid-item:nth-child(3) {
+        border-bottom: 1px solid #ddd;
+    }
+    .grid-item:nth-child(4),
+    .grid-item:nth-child(5) {
+        border-right: 1px solid #ddd;
+        padding-top: 60px;
+    }
+    .grid-item:nth-child(6) {
+        padding-top: 60px;
     }
 }
