@@ -4,7 +4,7 @@
 
 .top-hero {
     padding: 50px 0 0 0;
-    background: #F8F8F8;
+    background: $lightBgColor;
     box-shadow: inset 0 -250px 0 0 white;
     
     p {
@@ -16,9 +16,10 @@
     }
     .video-section {
         margin-top: 50px;
-        box-shadow: 0px 0px 50px 30px #00000015;
         border-radius: 3px;
         position: relative;
+
+        box-shadow: 0px 0px 50px 30px #00000015;
     }
     .play-button {
         width: 80px;
@@ -95,12 +96,18 @@
 }
 
 .image-left-rigt-section {
+    background: $lightBgColor;
+    padding: 100px 0px;
 
     .left-image{
-        padding: 20px;
+        padding: 0px 0px;
+
+        img {
+            box-shadow: 0px 0px 30px 10px #00000010;
+        }
     }
     .right-content {
-        padding: 20px;
+        padding: 0px 0px 0px 60px;
         h2 {
             font-size: 32px!important;
         }
