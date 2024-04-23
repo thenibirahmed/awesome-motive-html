@@ -16,3 +16,25 @@ $lightBgColor: #F8F8F8;
     text-decoration: none;
 }
 
+@mixin iconBox {
+    .grid-item {
+        padding: 30px;
+
+        .icon-frame {
+            width: 48px;
+            height: 48px;
+            display: inline-block;
+        }
+        h3 {
+            margin: 20px 0;
+            font-size: 24px;
+            color: $primaryTextColor;
+            font-family: $latoFont;
+        }
+        p {
+            font-size: 16px;
+            color: $secondaryTextColor;
+        }
+    }
+}
+

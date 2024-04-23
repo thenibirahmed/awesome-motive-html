@@ -32,19 +32,8 @@
 
 .feature-section {
     padding: 130px 0px;
-    .grid-item {
-        padding: 40px 30px;
-        h3 {
-            margin: 20px 0;
-            font-size: 24px;
-            color: $primaryTextColor;
-            font-family: $latoFont;
-        }
-        p {
-            font-size: 16px;
-            color: $secondaryTextColor;
-        }
-    }
+    @include iconBox();
+
     .grid-item:nth-child(1),
     .grid-item:nth-child(2) {
         border-right: 1px solid #ddd;
@@ -65,6 +54,7 @@
 .testimonial-section {
     padding: 120px 0px;
     background: linear-gradient(#F8F8F8, #FFFFFF);
+    
     .testimonial-card {
         width: 286.67px;
     
@@ -101,10 +91,6 @@
 
     .left-image{
         padding: 0px 0px;
-
-        img {
-            box-shadow: 0px 0px 30px 10px #00000010;
-        }
     }
     .right-content {
         padding: 0px 0px 0px 60px;
@@ -116,5 +102,38 @@
             margin-top: 20px;
             line-height: 1.55em;
         }
+    }
+}
+
+.testing-wp-forms-section {
+    padding: 100px 0px;
+
+    .grid-item:nth-child(1) {
+        padding: 0px 20px 0px 0px;
+    }
+    .grid-item:nth-child(2) {
+        padding: 0px 0px 0px 20px;
+    }
+    img {
+        border-radius: 6px;
+    }
+}
+
+.use-case-section {
+    padding: 0px 0px;
+
+    @include iconBox();
+
+    .use-cases{
+        margin: 50px 0px;
+    }
+    p {
+        font-family: $latoFont;
+        font-size: 24px;
+    }
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(2)
+    {
+        border-right: 1px solid #ddd;
     }
 }
