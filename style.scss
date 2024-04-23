@@ -127,9 +127,11 @@
     .use-cases{
         margin: 50px 0px;
     }
-    p {
+    h2 {
         font-family: $latoFont;
         font-size: 24px;
+        font-weight: 500;
+        padding: 25px 0px;
     }
     .grid-item:nth-child(1),
     .grid-item:nth-child(2)
@@ -139,8 +141,8 @@
 }
 
 .footer {
-    padding: 0px 0px 50px 0px;
-
+    padding: 25px 0px 80px 0px;
+    
     .cta {
         margin-top: 20px;
         font-size: 18px;
