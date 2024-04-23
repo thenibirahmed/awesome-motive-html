@@ -201,7 +201,7 @@ body {
   height: auto;
 }
 
-.abosolute {
+.absolute {
   position: absolute;
 }
 
@@ -254,6 +254,11 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+.top-hero .pro-badge {
+  left: 68%;
+  top: -10px;
+  color: #BBBBBB;
+}
 
 .feature-section {
   padding: 130px 0px;
@@ -301,6 +306,7 @@ body {
   width: 286.67px;
 }
 .testimonial-section .testimonial-card .testimonial-content {
+  background: #fff;
   border: 1px solid #ddd;
   padding: 30px;
   border-radius: 6px;

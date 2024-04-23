@@ -29,6 +29,11 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
     }
+    .pro-badge {
+        left: 68%;
+        top: -10px;
+        color: #BBBBBB
+    }
 }
 
 .feature-section {
@@ -60,6 +65,7 @@
         width: 286.67px;
     
         .testimonial-content {
+            background: #fff;
             border: 1px solid #ddd;
             padding: 30px;
             border-radius: 6px;
@@ -67,11 +73,9 @@
         blockquote {
             font-size: 16px;
         }
-    
         .testimonial-footer{
             margin-top: 20px;
         }
-    
         .testimonial-footer p {
             font-size: 14px;
         }
