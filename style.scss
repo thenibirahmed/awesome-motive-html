@@ -137,3 +137,25 @@
         border-right: 1px solid #ddd;
     }
 }
+
+.footer {
+    padding: 0px 0px 50px 0px;
+
+    .cta {
+        margin-top: 20px;
+        font-size: 18px;
+
+        .lead {
+            font-family: $latoFont;
+            color: $secondaryTextColor;
+        }
+        a {
+            color: $linkColor;
+        }
+    }
+    h2 {
+        font-size: 24px;    
+        font-weight: $latoFont;
+        color: $primaryTextColor;
+    }
+}

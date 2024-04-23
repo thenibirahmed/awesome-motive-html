@@ -383,4 +383,24 @@ body {
 .use-case-section .grid-item:nth-child(1),
 .use-case-section .grid-item:nth-child(2) {
   border-right: 1px solid #ddd;
+}
+
+.footer {
+  padding: 0px 0px 50px 0px;
+}
+.footer .cta {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.footer .cta .lead {
+  font-family: "Lato", sans-serif;
+  color: #777777;
+}
+.footer .cta a {
+  color: #036AAB;
+}
+.footer h2 {
+  font-size: 24px;
+  font-weight: "Lato", sans-serif;
+  color: #444444;
 }/*# sourceMappingURL=style.css.map */
