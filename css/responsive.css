@@ -415,4 +415,20 @@ body {
   font-size: 24px;
   font-weight: "Lato", sans-serif;
   color: #444444;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media all and (max-width: 768px) {
+  .md-w-100 {
+    width: 100%;
+  }
+  .md-block {
+    display: block;
+  }
+  .buttons a {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .buttons a:nth-child(2) {
+    margin-left: 0 !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

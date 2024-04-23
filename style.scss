@@ -11,8 +11,10 @@
         line-height: 1.4em;
         margin: 40px 0px 50px 0px;
     }
-    .primary-button{
-        margin-left: 50px;
+    .buttons {
+        a:nth-child(2){
+            margin-left: 50px;
+        }
     }
     .video-section {
         margin-top: 50px;
@@ -29,10 +31,14 @@
         transform: translate(-50%, -50%);
         border-radius: 50%;
     }
-    .pro-badge {
-        left: 68%;
-        top: -10px;
-        color: #BBBBBB
+    .heading-with-pro-badge{
+        display: inline-block;
+        
+        .pro-badge {
+            left: 100%;
+            top: -10px;
+            color: #BBBBBB
+        }
     }
 }
 
@@ -84,7 +90,7 @@
     .buttons {
         margin-top: 120px;
         
-        .primary-button {
+        a:nth-child(2) {
             margin-left: 50px;
         }
     }

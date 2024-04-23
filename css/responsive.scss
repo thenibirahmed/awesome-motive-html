@@ -1,0 +1,21 @@
+@import "../style.scss";
+
+@media all and (max-width: $breakPoint) {
+    .md-w-100 {
+        width: 100%;
+    }
+
+    .md-block {
+        display: block;
+    }
+
+    .buttons {
+        a {
+            display: block;
+            margin-bottom: 20px;
+        }
+        a:nth-child(2) {
+            margin-left: 0!important;
+        }
+    }
+}
