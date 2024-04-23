@@ -418,11 +418,24 @@ body {
 }
 
 @media all and (max-width: 768px) {
+  .grid-item {
+    padding: 30px 15px !important;
+  }
+  .grid-item h3 {
+    font-size: 22px !important;
+  }
+  .grid-item p {
+    font-size: 14px !important;
+  }
   .md-w-100 {
-    width: 100%;
+    width: 100% !important;
   }
   .md-block {
-    display: block;
+    display: block !important;
+  }
+  .md-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   .buttons a {
     display: block;
@@ -430,5 +443,77 @@ body {
   }
   .buttons a:nth-child(2) {
     margin-left: 0 !important;
+  }
+  .top-hero .play-button {
+    width: 70px;
+  }
+  .feature-section {
+    padding: 130px 0px;
+  }
+  .feature-section .grid-item {
+    padding: 30px;
+  }
+  .feature-section .grid-item .icon-frame {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+  }
+  .feature-section .grid-item h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #444444;
+    font-family: "Lato", sans-serif;
+  }
+  .feature-section .grid-item p {
+    font-size: 16px;
+    color: #777777;
+  }
+  .feature-section .grid-item:nth-child(1),
+  .feature-section .grid-item:nth-child(3) {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .feature-section .grid-item:nth-child(2),
+  .feature-section .grid-item:nth-child(4) {
+    border-bottom: 1px solid #ddd;
+    border-right: 0;
+  }
+  .testimonial-section {
+    padding: 120px 0px;
+    background: linear-gradient(#F8F8F8, #FFFFFF);
+  }
+  .testimonial-section .testimonial-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .form-control-section .right-content {
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .testing-wp-forms-section {
+    padding: 20px 0px;
+  }
+  .testing-wp-forms-section .grid-item:nth-child(1) {
+    padding: 0px;
+  }
+  .testing-wp-forms-section .grid-item:nth-child(2) {
+    padding: 0px;
+  }
+  .testing-wp-forms-section img {
+    border-radius: 6px;
+  }
+  .use-case-section {
+    padding: 0px 0px;
+  }
+  .use-case-section .use-cases {
+    margin: 20px;
+  }
+  .use-case-section h2 {
+    font-size: 22px;
+  }
+  .use-case-section .grid-item:nth-child(1),
+  .use-case-section .grid-item:nth-child(2) {
+    border-right: 0;
+    border-bottom: 1px solid #ddd;
   }
 }/*# sourceMappingURL=responsive.css.map */

@@ -1,12 +1,27 @@
 @import "../style.scss";
 
 @media all and (max-width: $breakPoint) {
+    .grid-item {
+        padding: 30px 15px!important;
+        h3 {
+            font-size: 22px!important;
+        }
+        p {
+            font-size: 14px!important;
+        }
+    }
+
     .md-w-100 {
-        width: 100%;
+        width: 100%!important;
     }
 
     .md-block {
-        display: block;
+        display: block!important;
+    }
+
+    .md-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)!important;
     }
 
     .buttons {
@@ -16,6 +31,76 @@
         }
         a:nth-child(2) {
             margin-left: 0!important;
+        }
+    }
+
+    .top-hero {
+        .play-button {
+            width: 70px;
+        }
+    }
+
+    .feature-section {
+        padding: 130px 0px;
+        @include iconBox();
+    
+        .grid-item:nth-child(1),
+        .grid-item:nth-child(3){
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        .grid-item:nth-child(2),
+        .grid-item:nth-child(4){
+            border-bottom: 1px solid #ddd;
+            border-right: 0;
+        }
+    }
+
+    .testimonial-section {
+        padding: 120px 0px;
+        background: linear-gradient(#F8F8F8, #FFFFFF);
+        
+        .testimonial-card {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .form-control-section {
+        .right-content {
+            padding: 0px;
+            margin-top: 30px;
+        }
+    }
+
+    .testing-wp-forms-section {
+        padding: 20px 0px;
+    
+        .grid-item:nth-child(1) {
+            padding: 0px;
+        }
+        .grid-item:nth-child(2) {
+            padding: 0px;
+        }
+        img {
+            border-radius: 6px;
+        }
+    }
+
+    .use-case-section {
+        padding: 0px 0px;
+    
+        .use-cases{
+            margin: 20px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        .grid-item:nth-child(1),
+        .grid-item:nth-child(2)
+        {
+            border-right: 0;
+            border-bottom: 1px solid #ddd;
         }
     }
 }
