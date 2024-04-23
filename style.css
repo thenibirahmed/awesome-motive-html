@@ -237,9 +237,6 @@ body {
   line-height: 1.4em;
   margin: 40px 0px 50px 0px;
 }
-.top-hero .buttons a:nth-child(2) {
-  margin-left: 50px;
-}
 .top-hero .video-section {
   margin-top: 50px;
   border-radius: 3px;
@@ -322,12 +319,6 @@ body {
 }
 .testimonial-section .testimonial-card .testimonial-footer p {
   font-size: 14px;
-}
-.testimonial-section .buttons {
-  margin-top: 120px;
-}
-.testimonial-section .buttons a:nth-child(2) {
-  margin-left: 50px;
 }
 
 .form-control-section {

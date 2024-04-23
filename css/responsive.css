@@ -228,6 +228,13 @@ body {
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.062745098);
 }
 
+.buttons {
+  margin-top: 120px;
+}
+.buttons a:nth-child(2) {
+  margin-left: 50px;
+}
+
 .top-hero {
   padding: 50px 0 0 0;
   background: #F8F8F8;
@@ -236,9 +243,6 @@ body {
 .top-hero p {
   line-height: 1.4em;
   margin: 40px 0px 50px 0px;
-}
-.top-hero .buttons a:nth-child(2) {
-  margin-left: 50px;
 }
 .top-hero .video-section {
   margin-top: 50px;
@@ -322,12 +326,6 @@ body {
 }
 .testimonial-section .testimonial-card .testimonial-footer p {
   font-size: 14px;
-}
-.testimonial-section .buttons {
-  margin-top: 120px;
-}
-.testimonial-section .buttons a:nth-child(2) {
-  margin-left: 50px;
 }
 
 .form-control-section {
@@ -437,6 +435,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  .buttons {
+    margin-top: 60px;
+  }
   .buttons a {
     display: block;
     margin-bottom: 20px;
@@ -448,7 +449,7 @@ body {
     width: 70px;
   }
   .feature-section {
-    padding: 130px 0px;
+    padding: 50px 0px;
   }
   .feature-section .grid-item {
     padding: 30px;
@@ -479,12 +480,15 @@ body {
     border-right: 0;
   }
   .testimonial-section {
-    padding: 120px 0px;
+    padding: 50px 0px;
     background: linear-gradient(#F8F8F8, #FFFFFF);
   }
   .testimonial-section .testimonial-card {
     width: 100%;
     margin-bottom: 30px;
+  }
+  .form-control-section {
+    padding: 50px 0px;
   }
   .form-control-section .right-content {
     padding: 0px;
@@ -503,17 +507,23 @@ body {
     border-radius: 6px;
   }
   .use-case-section {
-    padding: 0px 0px;
+    padding: 0px 0px 30px 0px;
   }
   .use-case-section .use-cases {
-    margin: 20px;
+    margin: 0px 30px;
   }
   .use-case-section h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .use-case-section .grid-item:nth-child(1),
   .use-case-section .grid-item:nth-child(2) {
     border-right: 0;
     border-bottom: 1px solid #ddd;
+  }
+  .footer {
+    padding: 25px 0px 50px 0px;
+  }
+  .footer .cta .lead {
+    display: block;
   }
 }/*# sourceMappingURL=responsive.css.map */
