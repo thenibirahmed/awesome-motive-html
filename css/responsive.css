@@ -228,9 +228,6 @@ body {
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.062745098);
 }
 
-.buttons {
-  margin-top: 120px;
-}
 .buttons a:nth-child(2) {
   margin-left: 50px;
 }
@@ -308,6 +305,9 @@ body {
 .testimonial-section {
   padding: 120px 0px;
   background: linear-gradient(#F8F8F8, #FFFFFF);
+}
+.testimonial-section .buttons {
+  padding-top: 120px;
 }
 .testimonial-section .testimonial-card {
   width: 286.67px;
@@ -435,9 +435,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .buttons {
-    margin-top: 60px;
-  }
   .buttons a {
     display: block;
     margin-bottom: 20px;
@@ -483,6 +480,9 @@ body {
     padding: 50px 0px;
     background: linear-gradient(#F8F8F8, #FFFFFF);
   }
+  .testimonial-section .buttons {
+    padding-top: 50px;
+  }
   .testimonial-section .testimonial-card {
     width: 100%;
     margin-bottom: 30px;
@@ -522,6 +522,12 @@ body {
   }
   .footer {
     padding: 25px 0px 50px 0px;
+  }
+  .footer h2 {
+    font-size: 20px;
+  }
+  .footer .cta {
+    font-size: 16px;
   }
   .footer .cta .lead {
     display: block;

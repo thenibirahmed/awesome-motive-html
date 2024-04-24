@@ -25,7 +25,6 @@
     }
 
     .buttons {
-        margin-top: 60px;
         a {
             display: block;
             margin-bottom: 20px;
@@ -60,6 +59,10 @@
     .testimonial-section {
         padding: 50px 0px;
         background: linear-gradient(#F8F8F8, #FFFFFF);
+
+        .buttons {
+            padding-top: 50px;
+        }
         
         .testimonial-card {
             width: 100%;
@@ -109,7 +112,11 @@
 
     .footer {
         padding: 25px 0px 50px 0px;
+        h2 {
+            font-size: 20px;
+        }
         .cta {
+            font-size: 16px;
             .lead {
                 display: block;
             }
